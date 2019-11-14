@@ -49,7 +49,9 @@ int main(int argc, string argv[])
     int i, j;
     for (i = 0, j = 0; i < length; i++, j++) 
     {
+        // Make sure that the key word keeps getting looped in case length message > length key
         j = j % n;
+        
         // Retain uppercase
         if (message[i] >= 65 && message[i] <= 90)
         {
